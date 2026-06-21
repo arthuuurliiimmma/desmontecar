@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0b0b">
+    <meta
+      name="description"
+      content="Pecas Automotivas Originais com Economia de Ate 70%: pecas automotivas de desmonte, motores, cambios, latarias, sucatas e atendimento pelo WhatsApp."
+    >
+    <title>Pe&ccedil;as Automotivas Originais com Economia de At&eacute; 70%</title>
+    <style>
+      :root {
+        --ink: #0b0b0b;
+        --ink-soft: #181818;
+        --steel: #30343a;
+        --paper: #f5f1e8;
+        --white: #ffffff;
+        --muted: #6a6257;
+        --line: #ded4c3;
+        --gold: #f1b90b;
+        --gold-deep: #c98d00;
+        --green: #25d366;
+        --green-dark: #128c4a;
+        --max: 1180px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.5;
+      }
+
+      body::selection {
+        background: var(--gold);
+        color: var(--ink);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .site-header {
+        position: fixed;
+        inset: 0 0 auto;
+        z-index: 30;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(8, 8, 8, 0.86);
+        color: var(--white);
+        backdrop-filter: blur(14px);
+      }
+
+      .nav {
+        width: min(var(--max), calc(100% - 32px));
+        min-height: 218px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      .brand-badge {
+        width: 318px;
+        max-width: calc(100vw - 120px);
+        height: auto;
+        aspect-ratio: 706 / 451;
+        display: grid;
+        place-items: center;
+        border: 0;
+        border-radius: 0;
+        overflow: visible;
+        background: transparent;
+      }
+
+      .brand-badge img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        gap: 18px;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      .nav-menu a:not(.header-whatsapp) {
+        padding-block: 8px;
+      }
+
+      .header-whatsapp,
+      .button,
+      .whatsapp-float {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .header-whatsapp {
+        min-height: 42px;
+        padding: 0 14px;
+        border-radius: 8px;
+        background: var(--green);
+        color: #042510;
+        font-weight: 950;
+      }
+
+      .hero {
+        min-height: 91svh;
+        position: relative;
+        display: grid;
+        align-items: end;
+        overflow: hidden;
+        padding: 250px 0 60px;
+        color: var(--white);
+        background:
+          linear-gradient(90deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.62) 48%, rgba(0, 0, 0, 0.1)),
+          linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0)),
+          url("./assets/photos/desmontecar-fachada-wide.png") center / cover;
+      }
+
+      .hero-inner,
+      .section-inner,
+      .footer-inner {
+        width: min(var(--max), calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        width: fit-content;
+        margin-bottom: 16px;
+        padding: 8px 12px;
+        border: 1px solid rgba(241, 185, 11, 0.5);
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.52);
+        color: var(--gold);
+        font-size: 0.82rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 920px;
+        font-size: 4.9rem;
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 650px;
+        margin-top: 24px;
+        color: rgba(255, 255, 255, 0.88);
+        font-size: 1.2rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 30px;
+      }
+
+      .hero-logistics {
+        max-width: 780px;
+        margin-top: 16px;
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 10px;
+        scroll-margin-top: 230px;
+      }
+
+      .hero-logo-card {
+        min-height: 106px;
+        padding: 12px;
+        border: 1px solid rgba(241, 185, 11, 0.32);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.94);
+        color: var(--ink);
+      }
+
+      .hero-logo-card strong {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .hero-logo-card img {
+        width: 100%;
+        height: 58px;
+        object-fit: contain;
+      }
+
+      .hero-photo-link {
+        width: fit-content;
+        margin-top: 12px;
+      }
+
+      .button {
+        min-height: 54px;
+        padding: 0 20px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        font-weight: 950;
+        transition:
+          transform 180ms ease,
+          background 180ms ease,
+          border-color 180ms ease;
+      }
+
+      .button:hover,
+      .button:focus-visible {
+        transform: translateY(-2px);
+      }
+
+      .button.primary {
+        background: var(--gold);
+        color: #171000;
+      }
+
+      .button.dark {
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .button.ghost {
+        border-color: rgba(255, 255, 255, 0.35);
+        background: rgba(0, 0, 0, 0.36);
+        color: var(--white);
+      }
+
+      .quick-strip {
+        position: relative;
+        z-index: 2;
+        width: min(var(--max), calc(100% - 32px));
+        margin: -34px auto 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        box-shadow: 0 20px 56px rgba(31, 23, 9, 0.16);
+      }
+
+      .quick-item {
+        padding: 24px;
+        border-right: 1px solid var(--line);
+      }
+
+      .quick-item:last-child {
+        border-right: 0;
+      }
+
+      .quick-item strong {
+        display: block;
+        color: var(--ink);
+        font-size: 1.05rem;
+        line-height: 1.2;
+      }
+
+      .quick-item span {
+        display: block;
+        margin-top: 7px;
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      section {
+        padding: 78px 0;
+        scroll-margin-top: 230px;
+      }
+
+      .quick-strip {
+        scroll-margin-top: 230px;
+      }
+
+      .section-title {
+        max-width: 780px;
+        margin-bottom: 34px;
+      }
+
+      .section-title h2 {
+        font-size: 3.25rem;
+        line-height: 1.02;
+        letter-spacing: 0;
+      }
+
+      .section-title p {
+        margin-top: 12px;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .service-card {
+        min-height: 232px;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+      }
+
+      .service-card svg {
+        color: var(--gold-deep);
+      }
+
+      .service-card h3 {
+        margin-top: 20px;
+        font-size: 1.18rem;
+        line-height: 1.16;
+      }
+
+      .service-card p {
+        margin-top: 9px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .feature {
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .feature-layout {
+        display: grid;
+        grid-template-columns: 0.98fr 1.02fr;
+        gap: 34px;
+        align-items: center;
+      }
+
+      .feature-photo {
+        min-height: 520px;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      .feature-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .feature-copy h2 {
+        font-size: 4rem;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .feature-copy p {
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.76);
+        font-size: 1.04rem;
+      }
+
+      .feature-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 26px;
+      }
+
+      .feature-list li {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .feature-list svg {
+        margin-top: 2px;
+        color: var(--gold);
+      }
+
+      .photo-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .gallery-item {
+        position: relative;
+        min-height: 250px;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #d9d2c5;
+      }
+
+      .gallery-item.large {
+        grid-column: span 2;
+        min-height: 360px;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 260ms ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.035);
+      }
+
+      .gallery-caption {
+        position: absolute;
+        inset: auto 12px 12px;
+        padding: 8px 10px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.68);
+        color: var(--white);
+        font-size: 0.86rem;
+        font-weight: 850;
+      }
+
+      .trust-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 16px;
+        align-items: stretch;
+      }
+
+      .trust-copy {
+        padding: 28px;
+        border-radius: 8px;
+        background: var(--ink);
+        color: var(--white);
+      }
+
+      .trust-copy h2 {
+        font-size: 3.1rem;
+        line-height: 1.02;
+      }
+
+      .trust-copy p {
+        margin-top: 14px;
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      .trust-copy .button {
+        margin-top: 24px;
+      }
+
+      .seal-board {
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+      }
+
+      .seal-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .seal {
+        min-height: 118px;
+        display: grid;
+        place-items: center;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fffdf7;
+      }
+
+      .seal img {
+        max-height: 78px;
+        object-fit: contain;
+      }
+
+      .payment {
+        margin-top: 12px;
+        padding: 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fffdf7;
+      }
+
+      .payment img {
+        width: 100%;
+        max-height: 130px;
+        object-fit: contain;
+      }
+
+      .cta-band {
+        padding: 58px 0;
+        background: var(--gold);
+        color: #181000;
+      }
+
+      .cta-inner {
+        width: min(var(--max), calc(100% - 32px));
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .cta-inner h2 {
+        max-width: 720px;
+        font-size: 3.5rem;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      .site-footer {
+        padding: 34px 0 98px;
+        background: #101010;
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .footer-inner strong {
+        color: var(--white);
+      }
+
+      .footer-inner a {
+        color: var(--gold);
+        font-weight: 950;
+      }
+
+      .whatsapp-float {
+        position: fixed;
+        right: max(18px, env(safe-area-inset-right));
+        bottom: max(18px, env(safe-area-inset-bottom));
+        z-index: 60;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: var(--green);
+        color: var(--white);
+        box-shadow: 0 16px 38px rgba(18, 140, 74, 0.42);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .whatsapp-float:hover,
+      .whatsapp-float:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 46px rgba(18, 140, 74, 0.52);
+      }
+
+      .whatsapp-float svg {
+        width: 31px;
+        height: 31px;
+      }
+
+      svg {
+        flex: 0 0 auto;
+      }
+
+      @media (max-width: 980px) {
+        .nav-menu a:not(.header-whatsapp) {
+          display: none;
+        }
+
+        .hero {
+          background:
+            linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.52)),
+            linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0)),
+            url("./assets/photos/desmontecar-fachada-wide.png") center / cover;
+        }
+
+        .quick-strip,
+        .services-grid,
+        .feature-layout,
+        .trust-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .quick-item {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .quick-item:last-child {
+          border-bottom: 0;
+        }
+
+        .feature-photo {
+          min-height: 420px;
+        }
+
+        h1 {
+          font-size: 3.7rem;
+        }
+
+        .section-title h2 {
+          font-size: 2.8rem;
+        }
+
+        .feature-copy h2,
+        .trust-copy h2,
+        .cta-inner h2 {
+          font-size: 2.75rem;
+        }
+
+        .photo-gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .cta-inner,
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .nav {
+          width: min(var(--max), calc(100% - 24px));
+          min-height: 198px;
+          gap: 12px;
+        }
+
+        .brand-badge {
+          width: min(292px, calc(100vw - 96px));
+          height: auto;
+        }
+
+        .header-whatsapp {
+          width: 52px;
+          height: 52px;
+          min-height: 52px;
+          flex: 0 0 52px;
+          padding: 0;
+          overflow: hidden;
+          border-radius: 14px;
+          gap: 0;
+          font-size: 0;
+          line-height: 0;
+        }
+
+        .header-whatsapp svg {
+          width: 25px;
+          height: 25px;
+          color: #042510;
+        }
+
+        .hero {
+          min-height: 86svh;
+          padding: 230px 0 40px;
+        }
+
+        .hero-actions,
+        .button {
+          width: 100%;
+        }
+
+        .hero-logistics {
+          grid-template-columns: 1fr;
+          margin-top: 12px;
+          scroll-margin-top: 216px;
+        }
+
+        .hero-logo-card {
+          min-height: 92px;
+          padding: 10px;
+        }
+
+        .hero-logo-card strong {
+          margin-bottom: 6px;
+          font-size: 0.78rem;
+        }
+
+        .hero-logo-card img {
+          height: 48px;
+        }
+
+        .hero-photo-link {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 2.45rem;
+        }
+
+        .hero-copy {
+          font-size: 1.04rem;
+        }
+
+        .section-title h2,
+        .feature-copy h2,
+        .trust-copy h2,
+        .cta-inner h2 {
+          font-size: 2.18rem;
+        }
+
+        .hero-inner,
+        .section-inner,
+        .footer-inner,
+        .quick-strip,
+        .cta-inner {
+          width: min(var(--max), calc(100% - 24px));
+        }
+
+        section {
+          padding: 60px 0;
+          scroll-margin-top: 216px;
+        }
+
+        .quick-strip {
+          scroll-margin-top: 216px;
+        }
+
+        .photo-gallery {
+          grid-template-columns: 1fr;
+        }
+
+        .gallery-item,
+        .gallery-item.large {
+          grid-column: auto;
+          min-height: 280px;
+        }
+
+        .seal-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .whatsapp-float {
+          width: 58px;
+          height: 58px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Navegacao principal">
+        <a class="brand" href="#inicio" aria-label="Pe&ccedil;as Automotivas Originais com Economia de At&eacute; 70%">
+          <span class="brand-badge" aria-hidden="true">
+            <img src="./assets/logos/logo2-transparent.png" alt="">
+          </span>
+        </a>
+
+        <div class="nav-menu">
+          <a href="#estoque">Estoque</a>
+          <a href="#fotos">Fotos</a>
+          <a href="#marcas">Marcas</a>
+          <a class="header-whatsapp" href="https://wa.me/5562981478210" target="_blank" rel="noopener">
+            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16.04 3.2c-7 0-12.7 5.7-12.7 12.7 0 2.24.58 4.38 1.68 6.26L3.2 28.8l6.8-1.78a12.68 12.68 0 0 0 6.04 1.54c7 0 12.7-5.7 12.7-12.7s-5.7-12.66-12.7-12.66Zm0 23.18c-1.94 0-3.82-.52-5.47-1.5l-.4-.24-4.04 1.06 1.08-3.94-.26-.42a10.45 10.45 0 0 1-1.42-5.44c0-5.8 4.72-10.52 10.52-10.52s10.52 4.72 10.52 10.52-4.72 10.48-10.52 10.48Zm5.78-7.86c-.32-.16-1.88-.92-2.16-1.02-.3-.12-.5-.16-.72.16-.2.32-.82 1.02-1 1.24-.18.2-.36.24-.68.08-.32-.16-1.34-.5-2.56-1.58-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.5.14-.66.14-.14.32-.36.48-.54.16-.18.2-.32.32-.54.1-.2.04-.4-.02-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.54h-.62c-.2 0-.56.08-.86.4-.3.32-1.12 1.1-1.12 2.68s1.14 3.1 1.3 3.32c.16.2 2.24 3.42 5.44 4.8.76.32 1.36.52 1.82.66.76.24 1.46.2 2.02.12.62-.1 1.88-.76 2.14-1.5.26-.74.26-1.38.18-1.5-.08-.14-.28-.22-.6-.38Z"/>
+            </svg>
+            (62) 98147-8210
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-label="Pe&ccedil;as Automotivas Originais com Economia de At&eacute; 70%">
+        <div class="hero-inner">
+          <p class="eyebrow">Pe&ccedil;as automotivas de desmonte</p>
+          <h1>Pe&ccedil;as Automotivas Originais com Economia de At&eacute; 70%</h1>
+          <p class="hero-copy">
+            Encontre pe&ccedil;as originais usadas com qualidade e pre&ccedil;o justo.
+            Atendimento r&aacute;pido pelo WhatsApp e or&ccedil;amento em minutos.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://wa.me/5562981478210?text=Ola%2C%20vim%20pelo%20site%20de%20pecas%20automotivas%20e%20quero%20solicitar%20um%20orcamento." target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="22" height="22" viewBox="0 0 32 32" fill="currentColor">
+                <path d="M16.04 3.2c-7 0-12.7 5.7-12.7 12.7 0 2.24.58 4.38 1.68 6.26L3.2 28.8l6.8-1.78a12.68 12.68 0 0 0 6.04 1.54c7 0 12.7-5.7 12.7-12.7s-5.7-12.66-12.7-12.66Zm0 23.18c-1.94 0-3.82-.52-5.47-1.5l-.4-.24-4.04 1.06 1.08-3.94-.26-.42a10.45 10.45 0 0 1-1.42-5.44c0-5.8 4.72-10.52 10.52-10.52s10.52 4.72 10.52 10.52-4.72 10.48-10.52 10.48Zm5.78-7.86c-.32-.16-1.88-.92-2.16-1.02-.3-.12-.5-.16-.72.16-.2.32-.82 1.02-1 1.24-.18.2-.36.24-.68.08-.32-.16-1.34-.5-2.56-1.58-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.5.14-.66.14-.14.32-.36.48-.54.16-.18.2-.32.32-.54.1-.2.04-.4-.02-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.54h-.62c-.2 0-.56.08-.86.4-.3.32-1.12 1.1-1.12 2.68s1.14 3.1 1.3 3.32c.16.2 2.24 3.42 5.44 4.8.76.32 1.36.52 1.82.66.76.24 1.46.2 2.02.12.62-.1 1.88-.76 2.14-1.5.26-.74.26-1.38.18-1.5-.08-.14-.28-.22-.6-.38Z"/>
+              </svg>
+              Solicitar or&ccedil;amento
+            </a>
+          </div>
+
+          <div class="hero-logistics" id="marcas" aria-label="Montadoras e envio para todo Brasil">
+            <div class="hero-logo-card">
+              <strong>Principais montadoras</strong>
+              <img src="./assets/logos/montadoras.png" alt="Volkswagen, Ford, Fiat, Chevrolet, Renault, Peugeot, Nissan, Audi, Mercedes, Toyota, Mitsubishi, Citroen, BMW, Chrysler, Alfa Romeo, Subaru, Volvo e Suzuki">
+            </div>
+            <div class="hero-logo-card">
+              <strong>Envio para todo Brasil</strong>
+              <img src="./assets/logos/envio-brasil.png" alt="Correios, Jadlog, Azul Cargo Express e Latam Cargo">
+            </div>
+          </div>
+
+          <a class="button ghost hero-photo-link" href="#fotos">Ver fotos da loja</a>
+        </div>
+      </section>
+
+      <div class="quick-strip" aria-label="Destaques">
+        <div class="quick-item">
+          <strong>Envio para todo Brasil</strong>
+          <span>Consulte envio e disponibilidade pelo WhatsApp.</span>
+        </div>
+        <div class="quick-item">
+          <strong>Motores e c&acirc;mbios</strong>
+          <span>Estoque de conjuntos e componentes sob consulta.</span>
+        </div>
+        <div class="quick-item">
+          <strong>Latarias e sucatas</strong>
+          <span>Pe&ccedil;as de reposi&ccedil;&atilde;o para diferentes marcas.</span>
+        </div>
+        <div class="quick-item">
+          <strong>Atendimento personalizado</strong>
+          <span>Retorno direto para tirar d&uacute;vidas sobre compatibilidade.</span>
+        </div>
+      </div>
+
+      <section id="estoque" aria-labelledby="estoque-title">
+        <div class="section-inner">
+          <div class="section-title">
+            <h2 id="estoque-title">Estoque de auto pe&ccedil;as com a ess&ecirc;ncia de desmonte.</h2>
+            <p>
+              A nova pagina mantem os pontos fortes do site antigo: variedade,
+              fotos reais, consulta r&aacute;pida e foco em pe&ccedil;as automotivas para
+              carros, vans, pick-ups, utilit&aacute;rios e caminh&otilde;es.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 4h6v4l3 3v7H6v-7l3-3V4Z"/>
+                  <path d="M8 14h8M12 10v8"/>
+                </svg>
+                <h3>Motores e C&acirc;mbios</h3>
+                <p>Grande variedade de motores completos, c&acirc;mbios e componentes relacionados.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 13h18l-2-5H5l-2 5Z"/>
+                  <path d="M5 13v5m14-5v5M7 18h10"/>
+                  <circle cx="7" cy="18" r="2"/>
+                  <circle cx="17" cy="18" r="2"/>
+                </svg>
+                <h3>Latarias e Sucatas</h3>
+                <p>Para-choques, lanternas, partes externas, partes internas e acabamentos.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 13h13l3 4v2h-3"/>
+                  <path d="M4 8h9v11H4z"/>
+                  <circle cx="7" cy="19" r="2"/>
+                  <circle cx="17" cy="19" r="2"/>
+                </svg>
+                <h3>Caminh&otilde;es e Vans</h3>
+                <p>Pe&ccedil;as para vans, pick-ups, utilit&aacute;rios e caminh&otilde;es, conforme estoque.</p>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div>
+                <svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 3 4 7v6c0 4 3.3 7 8 8 4.7-1 8-4 8-8V7l-8-4Z"/>
+                  <path d="m8.5 12 2.2 2.2 4.8-5"/>
+                </svg>
+                <h3>Compra Segura</h3>
+                <p>Atendimento claro para confirmar a pe&ccedil;a certa antes de fechar o pedido.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature" aria-labelledby="feature-title">
+        <div class="section-inner feature-layout">
+          <div class="feature-photo">
+            <img src="./assets/photos/motores-cambios-estoque.jpg" alt="Estoque com motores e c&acirc;mbios em desmonte">
+          </div>
+          <div class="feature-copy">
+            <h2 id="feature-title">Mande a refer&ecirc;ncia e receba atendimento direto.</h2>
+            <p>
+              Para agilizar a consulta, envie modelo, ano, motor, nome da pe&ccedil;a e
+              foto quando tiver. A equipe confere as op&ccedil;&otilde;es dispon&iacute;veis e retorna
+              pelo WhatsApp.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="m5 12 4 4L19 6"/>
+                </svg>
+                Or&ccedil;amentos de lanternas, para-choques, suspens&otilde;es, amortecedores e acess&oacute;rios.
+              </li>
+              <li>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="m5 12 4 4L19 6"/>
+                </svg>
+                Pe&ccedil;as internas, externas, mec&acirc;nicas e itens de acabamento.
+              </li>
+              <li>
+                <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="m5 12 4 4L19 6"/>
+                </svg>
+                Canal &uacute;nico no site: WhatsApp (62) 98147-8210.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="fotos" aria-labelledby="fotos-title">
+        <div class="section-inner">
+          <div class="section-title">
+            <h2 id="fotos-title">Fotos da loja, do patio e do estoque.</h2>
+            <p>
+              A galeria combina as novas imagens da loja com as fotos de
+              estoque que davam identidade ao site anterior.
+            </p>
+          </div>
+
+          <div class="photo-gallery">
+            <figure class="gallery-item large">
+              <img src="./assets/photos/desmontecar-fachada-wide.png" alt="Fachada da loja de pe&ccedil;as automotivas">
+              <figcaption class="gallery-caption">Fachada da loja</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./assets/photos/desmontecar-fachada-frente.png" alt="Frente da loja de pe&ccedil;as automotivas">
+              <figcaption class="gallery-caption">Loja e estoque</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./assets/photos/desmontecar-fachada-dono.png" alt="Fachada da loja com atendimento">
+              <figcaption class="gallery-caption">Atendimento na loja</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./assets/photos/estoque-carros-prateleira.jpg" alt="Veiculos desmontados em prateleiras">
+              <figcaption class="gallery-caption">Carros em desmonte</figcaption>
+            </figure>
+            <figure class="gallery-item large">
+              <img src="./assets/photos/motores-cambios-detalhe.jpg" alt="Motores em estoque">
+              <figcaption class="gallery-caption">Motores e cambios</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./assets/photos/latarias-sucatas-patio.jpg" alt="P&aacute;tio com latarias e sucatas">
+              <figcaption class="gallery-caption">Latarias e sucatas</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="./assets/photos/atendimento-oficina.jpg" alt="Atendimento tecnico em veiculo">
+              <figcaption class="gallery-caption">Suporte ao cliente</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="confianca-title">
+        <div class="section-inner trust-grid">
+          <div class="trust-copy">
+            <h2 id="confianca-title">Confian&ccedil;a, atendimento e compra orientada.</h2>
+            <p>
+              O site foi recriado do zero, mas manteve o foco do anterior:
+              mostrar estoque real, marcas atendidas, formas de envio e um canal
+              r&aacute;pido para tirar d&uacute;vidas antes da compra.
+            </p>
+            <a class="button primary" href="https://wa.me/5562981478210?text=Ola%2C%20quero%20confirmar%20a%20disponibilidade%20de%20uma%20peca." target="_blank" rel="noopener">
+              Confirmar disponibilidade
+            </a>
+          </div>
+
+          <div class="seal-board">
+            <div class="seal-grid">
+              <div class="seal">
+                <img src="./assets/logos/google-site-seguro.png" alt="Google Site Seguro">
+              </div>
+              <div class="seal">
+                <img src="./assets/logos/reclame-aqui.png" alt="Reclame Aqui">
+              </div>
+              <div class="seal">
+                <img src="./assets/logos/site-blindado.jpg" alt="Site Blindado">
+              </div>
+              <div class="seal">
+                <img src="./assets/logos/site-sustentavel.jpg" alt="Site Sustentavel">
+              </div>
+            </div>
+            <div class="payment">
+              <img src="./assets/logos/formas-pagamento.jpg" alt="Formas de pagamento">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-label="Contato pelo WhatsApp">
+        <div class="cta-inner">
+          <h2>Precisa consultar uma pe&ccedil;a agora?</h2>
+          <a class="button dark" href="https://wa.me/5562981478210?text=Ola%2C%20preciso%20de%20ajuda%20para%20encontrar%20uma%20peca%20automotiva." target="_blank" rel="noopener">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 32 32" fill="currentColor">
+              <path d="M16.04 3.2c-7 0-12.7 5.7-12.7 12.7 0 2.24.58 4.38 1.68 6.26L3.2 28.8l6.8-1.78a12.68 12.68 0 0 0 6.04 1.54c7 0 12.7-5.7 12.7-12.7s-5.7-12.66-12.7-12.66Zm0 23.18c-1.94 0-3.82-.52-5.47-1.5l-.4-.24-4.04 1.06 1.08-3.94-.26-.42a10.45 10.45 0 0 1-1.42-5.44c0-5.8 4.72-10.52 10.52-10.52s10.52 4.72 10.52 10.52-4.72 10.48-10.52 10.48Zm5.78-7.86c-.32-.16-1.88-.92-2.16-1.02-.3-.12-.5-.16-.72.16-.2.32-.82 1.02-1 1.24-.18.2-.36.24-.68.08-.32-.16-1.34-.5-2.56-1.58-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.5.14-.66.14-.14.32-.36.48-.54.16-.18.2-.32.32-.54.1-.2.04-.4-.02-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.54h-.62c-.2 0-.56.08-.86.4-.3.32-1.12 1.1-1.12 2.68s1.14 3.1 1.3 3.32c.16.2 2.24 3.42 5.44 4.8.76.32 1.36.52 1.82.66.76.24 1.46.2 2.02.12.62-.1 1.88-.76 2.14-1.5.26-.74.26-1.38.18-1.5-.08-.14-.28-.22-.6-.38Z"/>
+            </svg>
+            WhatsApp (62) 98147-8210
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p><strong>Pe&ccedil;as Automotivas Originais com Economia de At&eacute; 70%</strong> - pe&ccedil;as automotivas de desmonte sob consulta.</p>
+        <a href="https://wa.me/5562981478210" target="_blank" rel="noopener">(62) 98147-8210</a>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5562981478210?text=Ola%2C%20vim%20pelo%20site%20de%20pecas%20automotivas."
+      target="_blank"
+      rel="noopener"
+      aria-label="Chamar no WhatsApp"
+    >
+      <svg aria-hidden="true" viewBox="0 0 32 32" fill="currentColor">
+        <path d="M16.04 3.2c-7 0-12.7 5.7-12.7 12.7 0 2.24.58 4.38 1.68 6.26L3.2 28.8l6.8-1.78a12.68 12.68 0 0 0 6.04 1.54c7 0 12.7-5.7 12.7-12.7s-5.7-12.66-12.7-12.66Zm0 23.18c-1.94 0-3.82-.52-5.47-1.5l-.4-.24-4.04 1.06 1.08-3.94-.26-.42a10.45 10.45 0 0 1-1.42-5.44c0-5.8 4.72-10.52 10.52-10.52s10.52 4.72 10.52 10.52-4.72 10.48-10.52 10.48Zm5.78-7.86c-.32-.16-1.88-.92-2.16-1.02-.3-.12-.5-.16-.72.16-.2.32-.82 1.02-1 1.24-.18.2-.36.24-.68.08-.32-.16-1.34-.5-2.56-1.58-.94-.84-1.58-1.88-1.76-2.2-.18-.32-.02-.5.14-.66.14-.14.32-.36.48-.54.16-.18.2-.32.32-.54.1-.2.04-.4-.02-.56-.08-.16-.72-1.74-.98-2.38-.26-.62-.52-.54-.72-.54h-.62c-.2 0-.56.08-.86.4-.3.32-1.12 1.1-1.12 2.68s1.14 3.1 1.3 3.32c.16.2 2.24 3.42 5.44 4.8.76.32 1.36.52 1.82.66.76.24 1.46.2 2.02.12.62-.1 1.88-.76 2.14-1.5.26-.74.26-1.38.18-1.5-.08-.14-.28-.22-.6-.38Z"/>
+      </svg>
+    </a>
+  </body>
+</html>
